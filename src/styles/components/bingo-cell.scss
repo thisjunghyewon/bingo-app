@@ -25,16 +25,87 @@
   text-align: center;
   overflow: hidden;
   z-index: 1;
+  padding: 0 5px;
 }
 
 .bingo-cell.active {
   text-decoration: line-through;
 
   .bingo-cell-span {
-    background: rgb(216, 197, 24);
+    background: #caa485ec;
   }
 
   .bingo-cell-span.win {
     background-color: var(--bingo-cell-win);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bingo-cell {
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .bingo-cell-span {
+    width: 70px;
+    height: 65px;
+    padding: 2.5px 5px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bingo-cell {
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .bingo-cell-span {
+    width: 80px;
+    height: 75px;
+    padding: 3px 5px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bingo-cell {
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .bingo-cell-span {
+    width: 100px;
+    height: 90px;
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bingo-cell {
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .bingo-cell-span {
+    width: 120px;
+    height: 110px;
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bingo-cell {
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .bingo-cell-span {
+    width: 150px;
+    height: 140px;
+    padding: 5px;
+    font-size: 20px;
   }
 }

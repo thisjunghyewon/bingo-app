@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import BingoCell from "./BingoCell";
+import ParticleAnimation from "../animations/ParticleAnimation";
 
 import useCardPhrases from "../hooks/useCardPhrases";
 
@@ -77,7 +78,7 @@ const BingoCard = () => {
       {winLines.length > 0 && (
         <>
           <div key={winLines.length}>
-            <h3>Bingo!</h3>
+            <ParticleAnimation show={winLines.length > 0} />
           </div>
         </>
       )}
