@@ -1,0 +1,18 @@
+.bingo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bingo-container {
+  text-align: center;
+}
+
+.bingo-card {
+  display: grid;
+  box-sizing: border-box;
+  padding: 10px 0;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px;
+}

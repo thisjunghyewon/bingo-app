@@ -1,12 +1,18 @@
 import React from "react";
-import "./App.css";
+import "./styles/_main.scss";
+import BingoCard from "./components/BingoCard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Video Conference Bingo</h1>
-    </div>
+    <>
+      <div className="appContainer">
+        <div className="App-wrapper">
+          <h1>Video Conference Bingo</h1>
+          <BingoCard />
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

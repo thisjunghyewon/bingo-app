@@ -1,0 +1,40 @@
+.bingo-cell {
+  background-color: var(--bingo-cell-bg);
+  width: 150px;
+  height: 150px;
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  word-wrap: break-word;
+  padding: 5px;
+  position: relative;
+}
+
+.bingo-cell-size {
+  width: 135px;
+  height: 135px;
+}
+
+.bingo-cell-span {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bingo-cell.active {
+  text-decoration: line-through;
+
+  .bingo-cell-span {
+    background: rgb(216, 197, 24);
+  }
+
+  .bingo-cell-span.win {
+    background-color: var(--bingo-cell-win);
+  }
+}

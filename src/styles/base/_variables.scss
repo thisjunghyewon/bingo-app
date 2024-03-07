@@ -1,0 +1,19 @@
+//_variables.scss
+
+/*
+Font style
+*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap");
+
+// _fonts.scss
+$font-family: "Raleway", sans-serif;
+
+/*
+_variables.scss
+*/
+:root {
+  --txt: #000;
+  --background-color: #fff;
+  --bingo-cell-bg: #f0f0f0;
+  --bingo-cell-win: #ff780a;
+}
