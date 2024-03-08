@@ -7,6 +7,8 @@
 .bingo-container {
   padding: 15px;
   text-align: center;
+  border: $border;
+  border-radius: $border-radius;
 }
 
 .bingo-card {

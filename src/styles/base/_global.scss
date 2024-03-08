@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: $font-family;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -20,13 +24,10 @@ li {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   color: var(--txt);
+  font-size: 24px;
+  padding: 10px;
 }
 
 //For Firefox

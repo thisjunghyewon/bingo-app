@@ -62,6 +62,7 @@ const BingoCard = () => {
     <>
       <div className="bingo-wrapper">
         <div className="bingo-container">
+          <h1>Video Conference Bingo</h1>
           <div className={`bingo-card ${winLines.length > 0 ? "win" : ""}`}>
             {cardPhrases.map((phrase, index) => (
               <BingoCell

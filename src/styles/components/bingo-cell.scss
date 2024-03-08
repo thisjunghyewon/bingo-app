@@ -2,7 +2,6 @@
   background-color: var(--bingo-cell-bg);
   width: 150px;
   height: 150px;
-  border: solid 1px black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +9,23 @@
   word-wrap: break-word;
   padding: 5px;
   position: relative;
+  border: 1px solid #272727e0;
+  border-radius: $border-radius;
+}
+
+.bingo-cell:hover .bingo-cell-span {
+  background-color: #{$hover};
+  color: #{adjust-hue($hover, 45deg)};
+}
+
+.pulse {
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
 }
 
 .bingo-cell-size {
@@ -32,11 +48,13 @@
   text-decoration: line-through;
 
   .bingo-cell-span {
-    background: #caa485ec;
+    background: #3a3a3aec;
+    color: #fafafa;
   }
 
   .bingo-cell-span.win {
     background-color: var(--bingo-cell-win);
+    color: #303030;
   }
 }
 
@@ -50,7 +68,7 @@
     width: 70px;
     height: 65px;
     padding: 2.5px 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -64,7 +82,7 @@
     width: 80px;
     height: 75px;
     padding: 3px 5px;
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 

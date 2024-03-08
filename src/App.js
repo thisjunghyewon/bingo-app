@@ -7,7 +7,6 @@ const App = () => {
     <>
       <div className="appContainer">
         <div className="App-wrapper">
-          <h1>Video Conference Bingo</h1>
           <BingoCard />
         </div>
       </div>
